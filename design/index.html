@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+<body>
+  <div id="calcContainer">
+    <div id="Topcalc">
+      <h1 id="head">Calc</h1>
+      <div id="themes">
+        <section id="modeVals">1 2 3</section>
+        <section id="modeCont">THEME <input type="range" max="2" id="modeRange" value="1"/></div></section>
+    </div>
+    <div id="middleDiv">
+      <input type="text" id="displayArea"/>
+    </div>
+    <div id="keyPad">
+      <div id="keySect">
+        <button class="keys" id="number" value="7">7</button><button class="keys" id="number" value="8">8</button><button class="keys" id="number" value="9">9</button>
+        <button class="keys" value="DEL" id="delete">DEL</button>
+      </div>
+      <div id="keySect">
+        <button class="keys" id="number" value="4">4</button><button class="keys" id="number" value="5">5</button><button class="keys" id="number" value="6">6</button>
+        <button class="keys" id="additionOp" value="+">+</button>
+      </div>
+      <div id="keySect">
+        <button class="keys" id="number" value="1">1</button><button class="keys" id="number" value="2">2</button><button class="keys" id="number" value="3">3</button>
+        <button class="keys" id="subtractionOp" value="-">-</button>
+      </div>
+      <div id="keySect">
+        <button class="keys" id="number" value=".">.</button><button class="keys" id="number" value="0">0</button><button class="keys" value="/">/</button>
+        <button class="keys" value="*">x</button>
+      </div>
+      <div id="keySect">
+        <button class="keys" value="RESET" id="reset">RESET</button><button class="keys" id="equals" onclick="calculate()" value="=">=</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="changeMode.js"></script>
+</body>
+</html>
